@@ -1,8 +1,8 @@
 # Variable Arguments Annotations 
 
-> Variable Arguments was introduced in Java 1.7.
+> Variable Arguments was introduced in Java 1.7, with Java 1.9 couple of enhancement got introduced. 
 
-###Why VarArgs?
+Why VarArgs?
 Before 1.7 JDK, if you want to use same logic required for variable number of arguments, you have to create function for all combination like below example.
 There are some use-cases when you may required to pass variable number of arguments. Now you can use ```...``` operator to pass variable number of arguments.
 
