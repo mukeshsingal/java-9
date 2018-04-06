@@ -12,5 +12,5 @@ Java 9 has lot of enhancements which will improve how we design application arch
 - Factory methods to create Non-Modifiable Collections
 - Stream API enhancements 
 - Diamond <> operator enhancements 
-- Safe Variable Args Notations enhancements 
+- [Safe Variable Args Notations enhancements](docs/SafeVariableArgs.md)
 - New default GI Garbage collector 
