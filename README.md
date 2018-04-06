@@ -1,4 +1,4 @@
-# java-9
+# Java 9 Features and Updates
 
 Java 9 has lot of enhancements which will improve how we design application architecture. 
 
