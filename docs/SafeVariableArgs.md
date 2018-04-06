@@ -2,7 +2,7 @@
 
 > Variable Arguments was introduced in `Java 1.7`. However it had possibility of getting Heap pollution. With `Java 1.9` heap problem is resolved. 
 
-###Why VarArgs?
+### Why VarArgs?
 Before `Java 1.7`, if you want to use same logic required for variable number of arguments, you have to create function for all combination like below example.
 There are some use-cases when you may required to pass variable number of arguments. Now you can use ```...``` operator to pass variable number of arguments.
 
@@ -51,7 +51,7 @@ public class HeapPollutionCase {
 }
 ```
 
-###SafeVarargs Annotation 
+### SafeVarargs Annotation 
 Now when you are sure, there will not be any heap pollution in that case you can use `@SafeVarargs` Annotation to Suppress Compiler warnings.
 ```java
 import java.util.Arrays;
