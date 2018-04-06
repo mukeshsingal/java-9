@@ -35,7 +35,7 @@ Advantages with Immutable Objects:
 
 ### Factory Method?
 If a method return the Same class object, that method is called Factory method. For Eg.
-```
+```java
 DateFormat d = DateFormat.getInstance();
 List l = List.of();
 Set s = Set.of();
