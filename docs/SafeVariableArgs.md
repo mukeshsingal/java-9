@@ -26,7 +26,7 @@ For eg.
 
 > Internally passed variable will be stored as __Array__ of given type.
 
-###What is Heap Pollution
+### What is Heap Pollution
 If at runtime if a variable of one type try to point to object of other type, cause __ClassCastException__, this is called Heap Pollution. 
 There are some cases when you can face Heap Pollution like when try to use generics with VarArgs. 
 
