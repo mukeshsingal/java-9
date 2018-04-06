@@ -1,4 +1,10 @@
-# Variable Arguments Annotations 
+# Updates in SafeVarargs Annotations
+
+Until `Java 1.8` `@SafeVarargs` annotation was only application for Constructors, static or final methods but from `Java 1.9` you can also apply it to private methods also which may not be static or final.
+
+Read below documentation to get idea about concepts.
+
+### Variable Arguments Annotations 
 
 > Variable Arguments was introduced in `Java 1.7`. However it had possibility of getting Heap pollution. With `Java 1.9` heap problem is resolved. 
 
@@ -48,7 +54,7 @@ public class HeapPollutionCase {
         String name = (String) lists[0].get(0); //String type pointing to Integer type
         System.out.println(name);
     }
-}
+} 
 ```
 
 ### SafeVarargs Annotation 
