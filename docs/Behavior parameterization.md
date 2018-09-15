@@ -5,7 +5,6 @@ A well-known problem in software engineering is that no matter what you do, user
 Behavior parameterization is a software development pattern that lets you handle frequent requirement changes. In a nutshell, it means taking a block of code and making it available without executing it. This block of code can be called later by other parts of your programs, which means that you can defer the execution of that block of code. For instance, you could pass the block of code as an argument to another method that will execute it later. As a result, the method’s behavior is parameterized based on that block of code.
 
 
-```java
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
