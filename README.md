@@ -14,3 +14,7 @@ Java 9 has lot of enhancements which will improve how we design application arch
 - Diamond <> operator enhancements 
 - [Safe Variable Args Notations enhancements](docs/SafeVariableArgs.md)
 - New default GI Garbage collector 
+
+Java 8 in Action: 
+- Streams
+- Lembda Expression
