@@ -17,6 +17,32 @@
 |reduce|Terminal|`Optional<T>`|`BinaryOperator<T>`| `(T,T) -> T`|
 |collect|Terminal|long|||
 
+
+Numeric streams
+
+You saw earlier that you could use the reduce method to calculate the sum of the elements of a
+stream. For example, you can calculate the number of calories in the menu as follows:
+```java
+int calories = menu.stream()
+  .map(Dish::getCalories)
+  .reduce(0, Integer::sum);
+```
+The problem with this code is that there’s an insidious boxing cost. Behind the scenes each Integer needs to be unboxed to a primitive before performing the summation.
+
+Primitive stream specializations
+Java 8 introduces three primitive specialized stream interfaces to tackle this issue, IntStream, DoubleStream, and LongStream, that respectively specialize the elements of a stream to be int,long, and double—and thereby avoid hidden boxing costs.
+
+In Int
+|Operation|Type|Return Type|Functional Interface|Function Descriptor|
+|---|---|---|---|---|
+|sum|Terminal|int|
+|max,|Terminal|int|
+|min|Terminal|int|
+|average|Terminal|int|
+|rangeClosed|Terminal|`IntStream<T>`|
+
+
+
 1. Find all transactions in the year 2011 and sort them by value (small to high).
 2. What are all the unique cities where the traders work?
 3. Find all traders from Cambridge and sort them by name.
